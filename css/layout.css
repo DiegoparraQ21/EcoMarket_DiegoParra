@@ -1,0 +1,125 @@
+/* --------------- HEADER ---------------*/
+.site-header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: var(--header-height);
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.site-header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    color: var(--color-primary-dark);
+    font-weight: 400;
+}
+
+.site-nav__menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.site-nav__item a{
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* --------------- HERO ---------------*/
+.hero {
+    position: relative;
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .30);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero__content {
+    max-width: 620px;
+}
+
+.hero__badge {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    background: rgba(225, 225, 225, .15);
+    backdrop-filter: blur(8px);
+    color: var(--color-white);
+    font-size: .85rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.hero__title {
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+
+.hero__description {
+    color: rgba(225, 225, 225, .85);
+    max-width: 520px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.hero__buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* --------------- CATEGORIES ---------------*/
+
+/* --------------- FEATURED PRODUCTS ---------------*/
+.featured-products {
+    padding: var(--spacing-x1) 0;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+/* --------------- NEWSLETTER ---------------*/
+
+/* --------------- FOOTER ---------------*/
+
+/* --------------- RESPONSIVE ---------------*/
