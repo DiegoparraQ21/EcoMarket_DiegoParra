@@ -1,51 +1,133 @@
-:root {
-    /* -- Colores -- */
-    --color-primary: #2ecc71;
-    --color-primary-dark: #27ae60;
-    --color-background: #f5f5dc;
-    --color-surface: #ffffff;
-    --color-text: #2d3436;
-    --color-text-light: #636e72;
-    --color-border: #dcdde1;
-
-    /* -- Tipografia -- */
-    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, Sans-serif;
-    
-    /* -- Espaciado -- */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-ld: 2.5rem;
-    --spacing-xl: 4rem;
-
-    /* -- Bordes y sombras -- */
-    --radius: 12px;
-    --shadow: 0 8px 20px;
-
-    /* -- Transiciones -- */
-    --transition: 0.3s ease;
-}
-
-* {
+/* ------------ RESET ------------*/
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* ------------ VARIABLES ------------*/
+:root {
+    /* --- Colores --- */
+    --color-primary: #2ecc71;
+    --color-primary-dark: #27ae60;
+    --color-secondary: #f5f5dc;
+    --color-white: #ffffff;
+    --color-black: #1b1b1b;
+    --color-text: #4b4b4b;
+    --color-border: #e8e8e8;
+    --color-background: #fafaf7;
+
+    /* --- Tipografia ---*/
+    --font-title: "DM Serif Display", serif;
+    --font-body: "Inter", sans-serif;
+
+    /* --- Container --- */
+    --container-width: 1200px;
+
+    /* --- Bordes --- */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 28px;
+
+    /* --- Sombra --- */
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, .08);
+    --shadow-md: 0 12px 30px rgba(0, 0, 0, .10);
+
+    /* --- Transiciones --- */
+    --transition: .35s ease;
+
+    /* --- Espacios --- */
+    --spacing-xs: .5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+
+    /* --- Header --- */
+    --header-height: 90px;
+
+}
+
+
+/* ------------ BASE ------------*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: var(--font-family);
-    background-color: var(--color-background);
+    font-family: var(--font-body);
     color: var(--color-text);
+    background-color: var(--color-background);
+    min-height: 100vh;
     line-height: 1.6;
+    text-rendering: optimizeLegibility;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+
+/* ------------ TIPOGRAFIA ------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--font-title);
+    color: var(--color-black);
+    line-height:1.2;
+    font-weight:400;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+h1{
+    font-size:3.75rem;
+}
+
+h2{
+    font-size:2.75rem;
+}
+
+h3{
+    font-size:1.5rem;
+}
+
+p{
+    font-size:1rem;
+    color: var(--color-text);
+}
+
+small{
+    font-size:.875rem;
+}
+
+
+/* ------------ MEDIA ------------*/
+img,
+picture{
+    display:block;
+    max-width:100%;
     height: auto;
+}
+
+
+/* ------------ LINKS ------------*/
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+/* ------------ LISTAS ------------*/
+ul,
+ol{
+    list-style:none;
+}
+
+
+/* ------------ UTILIDADES GLOBALES ------------*/
+.container{
+    width:min(90%, var(--container-width));
+    margin-inline:auto;
+    padding-inline: 1rem;
 }

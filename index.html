@@ -1,195 +1,459 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>EcoMarket | Productos Sostenibles</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/animations.css">
 </head>
 
+
 <body>
-    <!---------- HEADER ---------->
-    <header>
+    <!----------------- HEADER ----------------->
+    <header class="site-header">
 
-        <div class="logo">
-            <h1>EcoMarket</h1>
-        </div>
+        <div class="container">
 
-        <nav>
+            <!-- Logo -->
+            <a href="index.html" class="logo">EcoMarket</a>
 
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="views/productos.html">Productos</a></li>
-                <li><a href="views/sobre-nosotros.html">Nosotros</a></li>
-                <li><a href="views/contacto.html">Contacto</a></li>
-            </ul>
+            <!-- Navegación -->
+            <nav class="site-nav">
 
-        </nav>
+                <ul class="site-nav__menu">
 
-        <div class="header-icons">
+                    <li class="site-nav__item"><a href="index.html" class="active">Home</a></li>
+                    <li class="site-nav__item"><a href="views/productos.html">Store</a></li>
+                    <li class="site-nav__item"><a href="views/sobre-nosotros.html">Our Story</a></li>
+                    <li class="site-nav__item"><a href="views/contacto.html">Contact</a></li>
 
-            <!-- Search Icon -->
-            <a href="#" class="icon-button" aria-label="Buscar">
-                
-                <svg class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-search-icon lucide-search">
+                </ul>
 
-                <path d="m21 21-4.34-4.34"/>
+            </nav>
 
-                <circle
-                cx="11"
-                cy="11"
-                r="8"/>
+            <!-- Acciones -->
+            <div class="header-actions">
 
-                </svg>
-            </a>
+                <!-- Buscar -->
+                <a href="#" class="icon-button" aria-label="Search">
 
-            <!-- Cart Icon -->
-            <a href="#" class="icon-button" aria-label="Carrito">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-search-icon lucide-search">
+                        <path d="m21 21-4.34-4.34" />
+                        <circle cx="11" cy="11" r="8" />
+                    </svg>
 
-                <svg class="icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-shopping-cart-icon lucide-shopping-cart">
-                
-                <circle
-                cx="8"
-                cy="21"
-                r="1"/>
-                
-                <circle
-                cx="19"
-                cy="21"
-                r="1"/>
-                
-                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                </a>
 
-                </svg>
-            </a>
+                <!-- Carrito -->
+                <a href="#" class="icon-button" aria-label="Shopping cart">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-shopping-bag-icon lucide-shopping-bag">
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                        <path d="M3.103 6.034h17.794" />
+                        <path
+                            d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" />
+                    </svg>
+
+                </a>
+
+            </div>
 
         </div>
 
     </header>
 
-    <!---------- MAIN ---------->
+    <!----------------- MAIN ----------------->
     <main>
-        <!----- Hero ----->
+
+        <!-- HERO -->
         <section class="hero">
 
-            <div class="hero-content">
+            <div class="hero__overlay"></div>
 
-                <h2>Compra responsable, vive sostenible</h2>
+            <div class="container">
 
-                <p>Descubre productos ecologicos diseñados para cuidar el planeta sin renunciar a la calidad</p>
+                <div class="hero__content">
 
-                <a href="views/productos.html" class="btn">Explorar productos</a>
+                    <span class="hero__badge">New Collection</span>
+
+                    <h1 class="hero__title">Nature in Every Purchase</h1>
+
+                    <p class="hero__description">
+                        Sustainable goods for a better tomorrow. Ethically sourced, zero-waste packaging,and designed to
+                        last a lifetime.
+                    </p>
+
+                    <div class="hero__buttons">
+
+                        <a href="views/productos.html" class="btn btn-primary">Shop New Arrivals</a>
+
+                        <a href="views/sobre-nosotros.html" class="btn btn-secondary">Learn Our Impact</a>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
-        <!----- Productos Destacados ----->
+        <!-- CATEGORÍAS -->
+        <section class="categories">
+
+            <div class="container">
+
+                <button type="button" class="category active">All</button>
+                <button type="button" class="category">Bamboo</button>
+                <button type="button" class="category">Textiles</button>
+                <button type="button" class="category">Kitchen</button>
+                <button type="button" class="category">Zero Waste</button>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCTOS -->
         <section class="featured-products">
 
-            <h2>Productos Destacados</h2>
+            <div class="container">
 
-            <div class="products-grid">
+                <div class="section-title">
 
-                <!--- Card #1 --->
-                <article class="product-card">
+                    <div>
 
-                    <img src="img/products/botella.jpg" alt="Producto Ecologico">
+                        <h2>Featured Products</h2>
 
-                    <h3>Botella Reutilizable</h3>
+                        <p>Handpicked eco-friendly essentials for you.</p>
 
-                    <p>Fabricada en acero inoxidable</p>
+                    </div>
 
-                    <a href="#">Ver más</a>
+                    <a href="views/productos.html" class="view-all">View All<span>→</span></a>
 
-                </article>
+                </div>
 
-                <!--- Card #2 --->
-                <article class="product-card">
 
-                    <img src="img/products/cepillo.jpg" alt="Producto Ecologico">
+                <div class="products-grid">
 
-                    <h3>Cepillo de Bambú</h3>
+                    <!-- Primer Producto -->
+                    <article class="product-card">
 
-                    <p>Una alternativa sostenible</p>
+                        <figure class="product-card__image">
 
-                    <a href="#">Ver más</a>
+                            <span class="product-card__badge">
+                                Best Seller
+                            </span>
 
-                </article>
+                            <button type="button" class="product-card__favorite" aria-label="Add to favorites">
 
-                <!--- Card #3 --->
-                <article class="product-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                    <path
+                                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                </svg>
 
-                    <img src="img/products/bolsa.jpg" alt="Producto Ecologico">
+                            </button>
 
-                    <h3>Bolsa Ecológica</h3>
+                            <img src="img/products/Bamboo-Toothbrush-Set.jpg" alt="Bamboo Toothbrush">
 
-                    <p>Reduce el uso de plastico</p>
+                        </figure>
 
-                    <a href="#">Ver más</a>
+                        <div class="product-card__content">
 
-                </article>
+                            <h3 class="product-card__title">Bamboo Toothbrush Set</h3>
 
-                <!--- Card #4 --->
-                <article class="product-card">
-                    <img src="img/products/vasos.jpg" alt="Producto Ecologico">
+                            <p class="product-card__description">
+                                Ethically sourced bamboo handles with charcoal infused bristles.
+                            </p>
 
-                    <h3>Vasos de Bambú</h3>
+                            <div class="product-card__footer">
 
-                    <p>Resistentes y reutilizables</p>
+                                <span class="product-card__price">$12.00</span>
 
-                    <a href="#">Ver más</a>
+                                <button type="button" class="product-card__button">Add to Cart</button>
 
-                </article>
+                            </div>
 
-                <!--- Card #5 --->
-                <article class="product-card">
-                    <img src="img/products/kit.jpg" alt="Producto Ecologico">
+                        </div>
 
-                    <h3>Kit Zero Waste</h3>
+                    </article>
 
-                    <p>Todo lo necesario para empezar</p>
+                    <!-- Segundo Producto -->
+                    <article class="product-card">
 
-                    <a href="#">Ver más</a>
+                        <figure class="product-card__image">
 
-                </article>
+                            <span class="product-card__badge">
+                                Plastic Free
+                            </span>
 
-                <!--- Card #6 --->
-                <article class="product-card">
-                    <img src="img/products/jabon.jpg" alt="Producto Ecologico">
+                            <button type="button" class="product-card__favorite" aria-label="Add to favorites">
 
-                    <h3>Jabón Natural</h3>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                    <path
+                                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                </svg>
 
-                    <p>Elaborado con ingredientes orgánicos</p>
+                            </button>
 
-                    <a href="#">Ver más</a>
+                            <img src="img/products/Silicone-Storage-Set.jpg" alt="Silicone Storage Set">
 
-                </article>
+                        </figure>
+
+                        <div class="product-card__content">
+
+                            <h3 class="product-card__title">Silicone Storage Set</h3>
+
+                            <p class="product-card__description">
+                                Leakproof, reusable silicone bags to replace single-use plastic. Freezer safe.
+                            </p>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">$24.50</span>
+
+                                <button type="button" class="product-card__button">Add to Cart</button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Tercer Producto -->
+                    <article class="product-card">
+
+                        <figure class="product-card__image">
+
+                            <span class="product-card__badge">
+                                Organic
+                            </span>
+
+                            <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                    <path
+                                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                </svg>
+
+                            </button>
+
+                            <img src="img/products/Cotton-Mesh-Produce-Bag.jpg" alt="Cotton Mesh Produce Bag">
+
+                        </figure>
+
+                        <div class="product-card__content">
+
+                            <h3 class="product-card__title">Cotton Mesh Produce Bag</h3>
+
+                            <p class="product-card__description">
+                                Organic cotton mesh bags. The perfect plastic free companion for your grocery runs.
+                            </p>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">$8.50</span>
+
+                                <button type="button" class="product-card__button">Add to Cart</button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Cuarto Producto -->
+                    <article class="product-card">
+
+                        <figure class="product-card__image">
+
+                            <span class="product-card__badge">
+                                Reusable
+                            </span>
+
+                            <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                    <path
+                                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                </svg>
+
+                            </button>
+
+                            <img src="img/products/Glass-Water-Bottle.jpg" alt="Glass Water Bottle">
+
+                        </figure>
+
+                        <div class="product-card__content">
+
+                            <h3 class="product-card__title">Glass Water Bottle</h3>
+
+                            <p class="product-card__description">
+                                Durable borasilicone glass with a protective silicone sleeve. Stay hydrated, stay green.
+                            </p>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">$24.00</span>
+
+                                <button type="button" class="product-card__button">Add to Cart</button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Quinto Producto -->
+                    <article class="product-card">
+
+                        <figure class="product-card__image">
+
+                            <span class="product-card__badge">
+                                BPA Free
+                            </span>
+
+                            <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                    <path
+                                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                </svg>
+
+                            </button>
+
+                            <img src="img/products/Natural-Beeswax-Wraps.jpg" alt="Natural Beeswax Wraps">
+
+                        </figure>
+
+                        <div class="product-card__content">
+
+                            <h3 class="product-card__title">Natural Beeswax Wraps</h3>
+
+                            <p class="product-card__description">
+                                A sustainable alternative to plastic wrap. Washable, reusable and compostable.
+                            </p>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">$15.00</span>
+
+                                <button type="button" class="product-card__button">Add to Cart</button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Sexto Producto -->
+                    <article class="product-card">
+
+                        <figure class="product-card__image">
+
+                            <span class="product-card__badge">
+                                Natural
+                            </span>
+
+                            <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                    <path
+                                        d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                </svg>
+
+                            </button>
+
+                            <img src="img/products/Citrus-Shampoo-Bar.jpg" alt="Citrus Shampoo Bar">
+
+                        </figure>
+
+                        <div class="product-card__content">
+
+                            <h3 class="product-card__title">Citrus Shampoo Bar</h3>
+
+                            <p class="product-card__description">
+                                Concentrated shampoo bar made with essential oils. Lasts up to 80 washes.
+                            </p>
+
+                            <div class="product-card__footer">
+
+                                <span class="product-card__price">$14.00</span>
+
+                                <button type="button" class="product-card__button">Add to Cart</button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+
+            <div class="container">
+
+                <div class="newsletter__content">
+
+                    <div class="newsletter__text">
+
+                        <h2>Join the Movement</h2>
+
+                        <p>
+                            Sign up for our newsletter to receive eco tips, exclusive discounts and sustainable news.
+                        </p>
+
+                        <form class="newsletter__form">
+
+                            <input type="email" placeholder="Enter your email address" required>
+
+                            <button type="submit">Subscribe</button>
+
+                        </form>
+
+                    </div>
+
+
+
+                    <div class="newsletter__image">
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -197,33 +461,73 @@
 
     </main>
 
-    <!---------- FOOTER ---------->
-    <footer>
-        <div>
-            <h3>EcoMarket</h3>
+    <!----------------- FOOTER ----------------->
+    <footer class="site-footer">
 
-            <p>Productos sostenibles para un futuro mejor.</p>
-        </div>
+        <div class="container">
 
-        <div>
-            <h3>Contacto</h3>
+            <div class="footer-column">
 
-            <p>contacto@ecomarket.com</p>
+                <h3>EcoMarket</h3>
 
-            <p>+57 321-654-9870</p>
-        </div>
+                <p>
+                    Ethical shopping for conscious consumers.
+                </p>
 
-        <div>
-            <h3>Síguenos</h3>
+            </div>
 
-            <p>Facebook</p>
 
-            <p>Instagram</p>
+            <div class="footer-column">
 
-            <p>X</p>
+                <h4>Shop</h4>
+
+                <ul>
+
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#"></a>New Arrivals</a></li>
+                    <li><a href="#"></a>Bamboo Collection</a></li>
+                    <li><a href="#"></a>Zero Waste Kits</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Company</h4>
+
+                <ul>
+
+                    <li>About Us</li>
+                    <li>Sustainability Promise</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Support</h4>
+
+                <ul>
+
+                    <li>Help Center</li>
+                    <li>Shipping & Returns</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+
+                </ul>
+
+            </div>
+
         </div>
 
     </footer>
 
 </body>
+
 </html>
