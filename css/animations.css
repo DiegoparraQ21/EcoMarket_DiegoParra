@@ -1,0 +1,42 @@
+.product-card {
+    transition: var(--transition);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.product-card__button:hover {
+    background: var(--color-primary-dark);
+}
+
+.product-card__favorite:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.category:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.site-nav__item a:hover {
+    color: var(--color-primary);
+}
+
+.view-all:hover {
+    gap: .8rem;
+}
+
+.newsletter__form button:hover {
+    background: var(--color-primary-dark);
+}
+
+.footer-column a:hover {
+    color: var(--color-primary);
+}
