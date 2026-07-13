@@ -83,43 +83,6 @@
     <!----------------- MAIN ----------------->
     <main>
 
-        <!-- HERO INTERNO -->
-        <section class="page-hero">
-
-            <div class="page-hero__content">
-
-                <h1 class="page-hero__title">Eco Collection</h1>
-
-                <p class="page-hero__description">Discover sustainable products carefully selected for conscious living.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- TOOLBAR -->
-        <section class="catalog-toolbar">
-
-            <div class="container">
-
-                <div class="catalog-toolbar__content">
-
-                    <h2>All Products</h2>
-
-                    <form class="catalog-search">
-
-                        <input type="search" placeholder="Search sustainable products">
-
-                    </form>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
         <!-- CATALOGO -->
         <section class="catalog">
 
@@ -211,12 +174,7 @@
 
                         </div>
 
-                        <input
-                        type="range"
-                        min="0"
-                        max="100"
-                        value="50"
-                        class="prince-range__slider">
+                        <input type="range" min="0" max="100" value="50" class="price-range__slider">
 
                         <div class="price-range__values">
 
@@ -279,10 +237,948 @@
                 </aside>
 
 
-
                 <section class="catalog-products">
 
-                    <!-- Aquí irán los 20 productos -->
+                    <div class="catalog-header">
+
+                        <div class="catalog-header__text">
+
+                            <h2>Sustainable Finds</h2>
+
+                            <p>Showing 24 eco-friendly products</p>
+
+                        </div>
+
+                        <div class="catalog-header__actions">
+
+                            <form class="catalog-search">
+
+                                <input type="search" placeholder="Search products...">
+
+                            </form>
+
+                            <button type="button" class="catalog-filter-button" aria-label="Open filters">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-sliders-horizontal-icon lucide-sliders-horizontal">
+                                    <path d="M10 5H3" />
+                                    <path d="M12 19H3" />
+                                    <path d="M14 3v4" />
+                                    <path d="M16 17v4" />
+                                    <path d="M21 12h-9" />
+                                    <path d="M21 19h-5" />
+                                    <path d="M21 5h-7" />
+                                    <path d="M8 10v4" />
+                                    <path d="M8 12H3" />
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="products-grid">
+
+                        <!-- Producto 1 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    BIODEGRADABLE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Bamboo-Toothbrush-Set.jpg" alt="Bamboo-Toothbrush">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Bamboo Toothbrush Set</h3>
+
+                                <p class="product-card__description">
+                                    Ethically sourced Moso bamboo handles with charcoal-infused bristles. 100%
+                                    compostable...
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$12.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 2 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    PLASTIC FREE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Silicone-Storage-Set.jpg" alt="Silicone-Storage-Set">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Silicone Storage Set</h3>
+
+                                <p class="product-card__description">
+                                    Leakproof, reusable silicone bags to replace single-use plastic. Freezer safe.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$24.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 3 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    ORGANIC
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Cotton-Mesh-Produce-Bag.jpg" alt="Cotton-Mesh-Produce-Bag">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Cotton Mesh Produce Bag</h3>
+
+                                <p class="product-card__description">
+                                    Organic cotton mesh bags. The perfect plastic free companion for your grocery runs.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$8.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 4 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    REUSABLE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Glass-Water-Bottle.jpg" alt="Glass-Water-Bottle">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Glass Water Bottle</h3>
+
+                                <p class="product-card__description">
+                                    Durable borasilicone glass with a protective silicone sleeve. Stay hydrated, stay
+                                    green.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$24.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 5 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    BPA FREE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Natural-Beeswax-Wraps.jpg" alt="Natural-Beeswax-Wraps">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Natural Beeswax Wraps</h3>
+
+                                <p class="product-card__description">
+                                    A sustainable alternative to plastic wrap. Washable, reusable and compostable.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$15.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 6 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    NATURAL
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Citrus-Shampoo-Bar.jpg" alt="Citrus-Shampoo-Bar">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Citrus Shampoo Bar</h3>
+
+                                <p class="product-card__description">
+                                    Concentrated shampoo bar made with essential oils. Lasts up to 80 washes.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$14.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 7 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    VEGAN
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/coconut-scrubber.jpg" alt="Coconut-Scrubber">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Coconut Scrubber</h3>
+
+                                <p class="product-card__description">
+                                    Tough on grease, gentle on the planet
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$6.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 8 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    STEEL
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Stainless-Steel-Straws.jpg" alt="Stainless Steel Straws">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Stainless Steel Straws</h3>
+
+                                <p class="product-card__description">
+                                    Pack of 4 with cleaning brush and pouch.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$9.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 9 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    REUSABLE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Reusable-Cotton-Rounds.jpg" alt="Reusable Cotton Rounds">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Reusable Cotton Rounds</h3>
+
+                                <p class="product-card__description">
+                                    Soft organic cotton pads that replace disposable makeup wipes.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$11.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 10 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    COMPOSTABLE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Compost-Bin-Filters.jpg" alt="Compost Bin Filters">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Compost Bin Filters</h3>
+
+                                <p class="product-card__description">
+                                    Natural charcoal filters that help control odors in kitchen compost bins.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$8.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 11 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    BAMBOO
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Bamboo-Hair-Brush.jpg" alt="Bamboo Hair Brush">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Bamboo Hair Brush</h3>
+
+                                <p class="product-card__description">
+                                    Smooth bamboo brush with natural bristles for everyday hair care.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$17.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 12 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    PLASTIC FREE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Wool-Dryer-Balls.jpg" alt="Wool Dryer Balls">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Wool Dryer Balls</h3>
+
+                                <p class="product-card__description">
+                                    Reusable wool balls that reduce drying time and soften clothes naturally.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$19.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 13 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    RECYCLED
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Recycled-Paper-Notebook.jpg" alt="Recycled Paper Notebook">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Recycled Paper Notebook</h3>
+
+                                <p class="product-card__description">
+                                    Eco-friendly notebook made from 100% recycled paper and soy-based ink.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$9.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 14 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    BIODEGRADABLE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Natural-Loofah-Sponge.jpg" alt="Natural Loofah Sponge">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Natural Loofah Sponge</h3>
+
+                                <p class="product-card__description">
+                                    Plant-based loofah sponge for gentle exfoliation and zero-waste cleaning.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$7.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 15 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    BPA FREE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Stainless-Steel-Lunch-Box.jpg" alt="Stainless Steel Lunch Box">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Stainless Steel Lunch Box</h3>
+
+                                <p class="product-card__description">
+                                    Durable food container designed to replace single-use plastic lunch boxes.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$26.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 16 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    ORGANIC COTTON
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Organic-Cotton-Dish-Towels.jpg" alt="Organic Cotton Dish Towels">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Organic Cotton Dish Towels</h3>
+
+                                <p class="product-card__description">
+                                    Highly absorbent kitchen towels made from certified organic cotton.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$15.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 17 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    TRAVEL FRIENDLY
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Bamboo-Cutlery-Set.jpg" alt="Bamboo Cutlery Set">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Bamboo Cutlery Set</h3>
+
+                                <p class="product-card__description">
+                                    Portable fork, knife, spoon, and straw set with a washable fabric pouch.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$13.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 18 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    REFILLABLE
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Refillable-Glass-Spray-Bottle.jpg" alt="Refillable Glass Spray Bottle">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Refillable Glass Spray Bottle</h3>
+
+                                <p class="product-card__description">
+                                    Glass bottle with reusable trigger sprayer for homemade cleaning solutions.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$16.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 19 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    NATURAL WOOD
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Cedar-Clothes-Hangers.jpg" alt="Cedar Clothes Hangers">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Cedar Clothes Hangers</h3>
+
+                                <p class="product-card__description">
+                                    Sustainably sourced cedar hangers that help keep clothes fresh and organized.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$22.00</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- Producto 20 -->
+                        <article class="product-card">
+
+                            <figure class="product-card__image">
+
+                                <span class="product-card__badge">
+                                    VEGAN
+                                </span>
+
+                                <button type="button" class="product-card__favorite" aria-label="Add to favorites">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path
+                                            d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                                    </svg>
+
+                                </button>
+
+                                <img src="../img/products/Plant-Based-Dish-Soap-Bar.jpg" alt="Plant-Based Dish Soap Bar">
+
+                            </figure>
+
+                            <div class="product-card__content">
+
+                                <h3 class="product-card__title">Plant-Based Dish Soap Bar</h3>
+
+                                <p class="product-card__description">
+                                    Long-lasting solid dish soap that cuts grease without plastic packaging.
+                                </p>
+
+                                <div class="product-card__footer">
+
+                                    <span class="product-card__price">$10.50</span>
+
+                                    <button type="button" class="product-card__button">+</button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <nav class="pagination" aria-label="Catalog pagination">
+
+                        <button type="button" class="pagination__button"><</button>
+
+                        <button type="button" class="pagination__number active">1</button>
+
+                        <button type="button" class="pagination__number">2</button>
+
+                        <button type="button" class="pagination__number">3</button>
+
+                        <button type="button" class="pagination__button">></button>
+
+                    </nav>
 
                 </section>
 

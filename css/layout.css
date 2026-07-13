@@ -1,5 +1,5 @@
 /* --------------- HEADER ---------------*/
-.site-header{
+.site-header {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -27,7 +27,7 @@
     gap: 2rem;
 }
 
-.site-nav__item a{
+.site-nav__item a {
     font-weight: 500;
     transition: var(--transition);
 }
@@ -97,11 +97,10 @@
     flex-wrap: wrap;
 }
 
-/* --------------- CATEGORIES ---------------*/
 
 /* --------------- FEATURED PRODUCTS ---------------*/
 .featured-products {
-    padding: var(--spacing-x1) 0;
+    padding: var(--spacing-xl) 0;
 }
 
 .section-title {
@@ -112,16 +111,10 @@
     gap: 2rem;
 }
 
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-}
-
 
 /* --------------- NEWSLETTER ---------------*/
 .newsletter {
-    padding: var(--spacing-x1) 0;
+    padding: var(--spacing-xl) 0;
 }
 
 .newsletter__content {
@@ -178,18 +171,127 @@
     transition: var(--transition);
 }
 
+
+
+/* --------------- CATALOG LAYOUT ---------------*/
+.catalog{
+    padding: 2rem 0 var(--spacing-xl);
+}
+
+.catalog .container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+
+/*---------- SIDEBAR ----------*/
+.catalog-sidebar {
+    position: sticky;
+    top: 110px;
+}
+
+/*---------- CONTENIDO DERECHO ----------*/
+
+.catalog-products {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.products-grid{
+    display:grid;
+    gap:2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+/*---------- CABECERA DEL CATÁLOGO ----------*/
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.catalog-header__text {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem  ;
+}
+
+.catalog-header__text h2{
+    margin-bottom: 0;
+}
+
+.catalog-header__text p{
+    margin-bottom: 0;
+    color:var(--color-text);
+}
+
+.catalog-header__actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+/*---------- GRID DEL CATÁLOGO ----------*/
+
+.catalog-products .products-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+    align-items:start;
+}
+
+/*---------- PAGINACIÓN ----------*/
+.pagination {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+    margin-top:2rem;
+}
+
 /* --------------- RESPONSIVE ---------------*/
 @media (max-width: 992px) {
-    .products-grid {
-        grid-template-columns: repeat(2,1fr);
-    }
-
     .newsletter__content {
         grid-template-columns: 1fr;
     }
 
     .site-footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalog .container {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-sidebar {
+        position: static;
+        margin-bottom: 2rem;
+    }
+
+    .products-grid {
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .catalog-products .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalog-header {
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .catalog-header__actions {
+    width:100%;
+    justify-content:space-between;
+    flex-wrap:wrap;
     }
 }
 
@@ -202,13 +304,32 @@
     .products-grid {
         grid-template-columns: 1fr;
     }
+
+    .catalog-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .catalog-header__actions{
+    width:100%;
+    justify-content:space-between;
+    }
+
+    .catalog-search {
+        flex: 1;
+    }
+
+    .catalog-search input {
+        width: 100%;
+    }
+
+    .catalog-products .products-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
     .site-header .container {
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
         padding: 1rem 0;
     }
 
@@ -218,5 +339,17 @@
 
     .site-footer .container {
         grid-template-columns: 1fr;
+    }
+
+    .catalog-products .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-search {
+        width: 100%;
+    }
+
+    .catalog-search input{
+        width: 100%;
     }
 }
