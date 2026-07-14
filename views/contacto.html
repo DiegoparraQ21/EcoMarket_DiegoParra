@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoMarket | Contact Us</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+
+<body>
+    <!----------------- HEADER ----------------->
+    <header class="site-header">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="../index.html" class="logo">
+
+                <svg class="logo__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                    <path d="M11 20A7 7 0 0 1 4 13C4 7 9 3 20 4c-1 11-5 16-11 16z" />
+                    <path d="M10 14c2-2 5-4 9-5" />
+
+                </svg>
+
+                <span class="logo__text">
+
+                    EcoMarket
+
+                </span>
+                
+            </a>
+
+            <!-- Navegación -->
+            <nav class="site-nav">
+
+                <ul class="site-nav__menu">
+
+                    <li class="site-nav__item"><a href="../index.html">Home</a></li>
+                    <li class="site-nav__item"><a href="productos.html">Store</a></li>
+                    <li class="site-nav__item"><a href="sobre-nosotros.html">Our Story</a></li>
+                    <li class="site-nav__item"><a href="contacto.html" class="active">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Acciones -->
+            <div class="header-actions">
+
+                <!-- Buscar -->
+                <a href="#" class="icon-button" aria-label="Search">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-search-icon lucide-search">
+                        <path d="m21 21-4.34-4.34" />
+                        <circle cx="11" cy="11" r="8" />
+                    </svg>
+
+                </a>
+
+                <!-- Carrito -->
+                <a href="#" class="icon-button" aria-label="Shopping cart">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-shopping-bag-icon lucide-shopping-bag">
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                        <path d="M3.103 6.034h17.794" />
+                        <path
+                            d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" />
+                    </svg>
+
+                </a>
+
+                <!-- Modo oscuro -->
+                <a href="#" class="icon-button" aria-label="Dark mode">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                        <path d="M12 3a6 6 0 0 0 9 9A9 9 0 1 1 12 3z" />
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!----------------- MAIN ----------------->
+    <main>
+
+        <!-- CONTACT HERO -->
+
+        <section class="contact-hero">
+
+            <div class="container">
+
+                <h1 class="contact-hero__title">
+                    We're here to help.
+                </h1>
+
+                <p class="contact-hero__description">
+                    Have a question about sustainable living or your order?
+                    Drop us a line and our eco-friendly team will get back to you.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT CONTENT -->
+
+        <section class="contact-content section">
+
+            <div class="container contact-content__grid">
+
+                <!-- FORMULARIO -->
+
+                <div class="contact-form-card">
+
+                    <form class="contact-form">
+
+                        <div class="form-group">
+
+                            <label for="name">Name</label>
+
+                            <input type="text" id="name" placeholder="Jane Doe" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="email">Email</label>
+
+                            <input type="email" id="email" placeholder="jane@example.com" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="message">Message</label>
+
+                            <textarea id="message" rows="6" placeholder="How can we help you today?"
+                                required></textarea>
+
+                        </div>
+
+                        <button class="btn btn-primary">
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- INFORMACIÓN -->
+
+                <aside class="contact-info">
+
+                    <h3 class="contact-info__title">
+
+                        📍 OUR HQ
+
+                    </h3>
+
+                    <!-- MAPA -->
+
+                    <a class="contact-map" href="https://maps.google.com/?q=Bogota,Colombia" target="_blank">
+
+                        <iframe src="https://www.google.com/maps?q=Bogota,Colombia&output=embed" loading="lazy"
+                            allowfullscreen>
+                        </iframe>
+
+                    </a>
+
+                    <!-- TARJETAS -->
+
+                    <div class="contact-cards">
+
+                        <article class="contact-card">
+
+                            <span class="contact-card__icon">
+
+                                ✉️
+
+                            </span>
+
+                            <h4>Email Us</h4>
+
+                            <p>
+
+                                support@ecomarket.com
+
+                            </p>
+
+                        </article>
+
+                        <article class="contact-card">
+
+                            <span class="contact-card__icon">
+
+                                📞
+
+                            </span>
+
+                            <h4>Call Us</h4>
+
+                            <p>
+
+                                +57 300 123 4567
+
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                    <p class="contact-social__text">
+
+                        Follow our journey towards a greener future
+
+                    </p>
+
+                    <div class="contact-social">
+
+                        <a href="#">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37a4 4 0 1 1-1.37-1.37A4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+                            </svg>
+
+                        </a>
+
+                        <a href="#">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="currentColor">
+                                <path
+                                    d="M16.5 2c.4 2.1 1.8 3.9 4 4.5v3a7.3 7.3 0 0 1-4-1.2V15a5 5 0 1 1-5-5c.3 0 .7 0 1 .1v3.1a2 2 0 1 0 1 1.8V2h3z" />
+                            </svg>
+
+                        </a>
+
+                        <a href="#">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="currentColor">
+                                <path
+                                    d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.4L6.3 22H3.2l7.3-8.3L1 2h6.3l4.4 5.8L18.9 2zm-1.1 18h1.7L6.2 3.8H4.4L17.8 20z" />
+                            </svg>
+
+                        </a>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

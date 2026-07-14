@@ -15,11 +15,27 @@
     align-items: center;
 }
 
-.logo {
-    font-family: var(--font-title);
-    font-size: 2rem;
-    color: var(--color-primary-dark);
-    font-weight: 400;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    text-decoration:none;
+    color:var(--color-black);
+}
+
+.logo__icon{
+    width:28px;
+    height:28px;
+    color:var(--color-primary);
+    flex-shrink:0;
+    display:block;
+}
+
+.logo__text{
+    font-family:"DM Serif Display", serif;
+    font-size:2rem;
+    line-height:1;
+    font-weight:400;
 }
 
 .site-nav__menu {
@@ -421,6 +437,44 @@
     opacity:.95;
 }
 
+/* --------------- CONTACT HERO --------------- */
+.contact-hero{
+    padding:5rem 0 3rem;
+}
+
+.contact-hero .container{
+    max-width:760px;
+    text-align:center;
+}
+
+.contact-hero__title{
+    margin-bottom:1.5rem;
+}
+
+.contact-hero__description{
+    font-size:1.1rem;
+    line-height:1.8;
+    color:var(--color-text);
+}
+
+/* --------------- CONTACT CONTENT --------------- */
+
+.contact-content{
+    padding:2rem 0 var(--spacing-xl);
+}
+
+.contact-content__grid{
+
+    display:grid;
+
+    grid-template-columns:1.15fr .85fr;
+
+    gap:4rem;
+
+    align-items:start;
+
+}
+
 /* --------------- RESPONSIVE ---------------*/
 @media (max-width: 992px) {
     .newsletter__content {
@@ -468,6 +522,10 @@
     }
 
     .testimonials-grid {
+    grid-template-columns:1fr;
+    }
+
+    .contact-content__grid{
     grid-template-columns:1fr;
     }
 }
