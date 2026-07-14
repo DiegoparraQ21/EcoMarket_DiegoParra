@@ -438,3 +438,119 @@
 .pagination__number.active:hover{
     color:var(--color-white);
 }
+
+/* --------------- VALUE CARD --------------- */
+.value-card{
+    text-align:center;
+}
+
+.value-card__icon{
+    width:72px;
+    height:72px;
+    margin:0 auto 1.25rem;
+    border-radius:50%;
+    background:#eef5ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+}
+
+.value-card h3{
+    margin-bottom:.75rem;
+    font-size:1.35rem;
+}
+
+.value-card p{
+    max-width:220px;
+    margin-inline:auto;
+}
+
+/* --------------- ABOUT MISSION --------------- */
+
+.about-mission__image img {
+    width:100%;
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-md);
+}
+
+.section-badge{
+    display:inline-block;
+    margin-bottom:1rem;
+    padding:.45rem 1rem;
+    border-radius:999px;
+    background:#e8f8ee;
+    color:var(--color-primary-dark);
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.about-mission__content h2{
+    margin-bottom:1.5rem;
+}
+
+.about-mission__content p{
+    margin-bottom:2rem;
+    max-width:540px;
+}
+
+.about-link{
+    color:var(--color-primary-dark);
+    font-weight:600;
+    transition:var(--transition);
+}
+
+.about-link:hover{
+    color:var(--color-primary);
+}
+
+/*--------------- TESTIMONIAL CARD ---------------*/
+.testimonial-card {
+    background:var(--color-white);
+    border-radius:var(--radius-md);
+    padding:2rem;
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition);
+}
+
+.testimonial-card:hover {
+    transform:translateY(-8px);
+    box-shadow:var(--shadow-md);
+}
+
+.testimonial-stars {
+    color:#f6b400;
+    font-size:1.2rem;
+    margin-bottom:1rem;
+}
+
+.testimonial-text {
+    font-style:italic;
+    margin-bottom:2rem;
+    line-height:1.8;
+}
+
+.testimonial-user {
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.testimonial-user img {
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.testimonial-user strong {
+    display:block;
+    color:var(--color-black);
+}
+
+.testimonial-user span {
+    color:var(--color-text);
+    font-size:.9rem;
+}
