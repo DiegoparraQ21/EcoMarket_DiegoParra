@@ -1,108 +1,156 @@
-.filter-list{
-    display:flex;
-    flex-direction:column;
-    gap:1rem;
-}
+# 🌿 EcoMarket – Sitio Web de Productos Sostenibles
 
-.filter-list label{
-    display:flex;
-    align-items:center;
-    gap:.75rem;
-    cursor:pointer;
-}
+## 📖 Descripción del Proyecto
 
-.filter-list span{
-    font-size:.95rem;
-    color:var(--color-text);
-}
+EcoMarket es un sitio web responsivo desarrollado como proyecto académico con el objetivo de aplicar los conocimientos adquiridos en HTML5 y CSS3. El proyecto simula una tienda virtual especializada en productos sostenibles y ecológicos, incorporando múltiples vistas, componentes reutilizables, diseño responsive y una estructura basada en buenas prácticas de desarrollo web.
 
-<!------->
+Como parte de la evaluación final del curso, se implementó una nueva sección de **Blog**, diseñada con un estilo editorial para diferenciar el contenido informativo del catálogo de productos.
 
-.price-range__labels{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:.8rem;
-}
+---
 
-.price-range__slider{
-    width:100%;
-    margin-bottom:.75rem;
-}
+## 🎯 Objetivos
 
-.price-range__values{
-    display:flex;
-    justify-content:space-between;
-}
+- Desarrollar un sitio web multipágina utilizando únicamente HTML5 y CSS3.
+- Aplicar correctamente la semántica de HTML5.
+- Implementar diseños utilizando CSS Grid y Flexbox.
+- Mantener una arquitectura CSS modular y reutilizable.
+- Adaptar el sitio a diferentes tamaños de pantalla mediante diseño responsive.
+- Crear una sección de Blog con un diseño editorial basado en los wireframes proporcionados.
 
-.price-range__labels,
-.price-range__values{
-    font-size:.9rem;
-    color:var(--color-text);
-}
+---
 
-.price-range__slider{
-    width:100%;
-    margin-bottom:.75rem;
-    appearance:none;
-    -webkit-appearance:none;
-    height:6px;
-    border-radius:999px;
-    background:var(--color-border);
-    cursor:pointer;
-}
+## 🚀 Funcionalidades
 
-.price-range__slider::-webkit-slider-thumb{
-    appearance:none;
-    width:18px;
-    height:18px;
-    border-radius:50%;
-    background:var(--color-primary);
-    cursor:pointer;
-    border:3px solid var(--color-white);
-    box-shadow:var(--shadow-sm);
-}
+### 🏠 Página Principal
 
-<!-------->
-.filter-tags{
-    display:flex;
-    flex-direction:column;
-    gap:1rem;
-}
+- Hero principal
+- Productos destacados
+- Categorías
+- Sección de newsletter
+- Navegación responsive
+- Footer reutilizable
 
-.filter-tag{
-    width:100%;
-    display:flex;
-    align-items:center;
-    gap:.85rem;
-    padding:.9rem 1rem;
-    border:1px solid var(--color-border);
-    border-radius:var(--radius-md);
-    background:var(--color-white);
-    cursor:pointer;
-    transition:var(--transition);
-}
+### 🛍 Página de Productos
 
-.filter-tag span:last-child{
-    font-size:.95rem;
-    font-weight:500;
-    color:var(--color-black);
-}
+- Catálogo de productos
+- Tarjetas de productos
+- Filtros por categorías
+- Paginación visual
+- Distribución responsive mediante CSS Grid
 
-.filter-tag__color{
-    width:14px;
-    height:14px;
-    border-radius:50%;
-    flex-shrink:0;
-}
+### 👥 Página Nosotros
 
-.filter-tag__color--green{
-    background:#3BB273;
-}
+- Información de la empresa
+- Historia de EcoMarket
+- Misión y valores relacionados con la sostenibilidad
 
-.filter-tag__color--blue{
-    background:#5B8DEF;
-}
+### 📩 Página de Contacto
 
-.filter-tag__color--orange{
-    background:#F5A623;
-}
+- Información de contacto
+- Formulario de contacto
+- Diseño adaptable a diferentes dispositivos
+
+### 📰 Página Principal del Blog
+
+- Encabezado editorial
+- Cuatro publicaciones con diseño horizontal
+- Categoría
+- Fecha de publicación
+- Resumen del artículo
+- Botón "Leer más"
+- Paginación desarrollada únicamente con CSS
+
+### 📖 Vista del Artículo
+
+- Breadcrumb
+- Imagen principal
+- Categoría
+- Autor
+- Fecha de publicación
+- Tiempo estimado de lectura
+- Introducción
+- Cita destacada
+- Imagen secundaria
+- Secciones del artículo
+- Etiquetas
+- Botones para compartir
+- Navegación entre artículos
+- Sidebar con posición sticky
+- Información del autor
+- Artículos relacionados
+- Formulario de suscripción
+
+---
+
+## 🛠 Tecnologías Utilizadas
+
+- HTML5
+- CSS3
+- CSS Grid
+- Flexbox
+- Responsive Design
+- Google Fonts
+- SVG
+
+---
+
+## 📂 Estructura del Proyecto
+
+EcoMarket/
+│
+├── css/
+│   ├── animations.css
+│   ├── blog.css
+│   ├── components.css
+│   ├── layout.css
+│   └── main.css
+│
+├── img/
+│
+├── views/
+│   ├── productos.html
+│   ├── sobre-nosotros.html
+│   ├── contacto.html
+│   ├── blog.html
+│   └── blog-detail.html
+│
+├── index.html
+└── README.md
+
+---
+
+## 📱 Diseño Responsive
+
+El proyecto fue desarrollado utilizando un enfoque responsive para garantizar una correcta visualización en diferentes dispositivos.
+
+Se adapta correctamente a:
+
+- Computadores de escritorio
+- Tablets
+- Teléfonos móviles
+
+sin generar desplazamiento horizontal.
+
+---
+
+## ✨ Conceptos Implementados
+
+- HTML5 semántico
+- Diseño Responsive
+- CSS Grid
+- Flexbox
+- Object Fit
+- Sidebar Sticky
+- Jerarquía tipográfica
+- Estados Hover, Focus y Active
+- Componentes reutilizables
+- Arquitectura CSS modular
+- Navegación entre páginas
+
+---
+
+## 📚 Propósito Académico
+
+Este proyecto fue desarrollado como parte del proceso de formación en programación y desarrollo web, con el propósito de fortalecer habilidades en la construcción de interfaces utilizando HTML5 y CSS3 sin el uso de JavaScript.
+
+Durante el desarrollo se buscó reproducir una interfaz moderna basada en los diseños de referencia suministrados por el docente, aplicando buenas prácticas de maquetación, organización del código y diseño adaptable.
